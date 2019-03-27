@@ -27,3 +27,4 @@ webpack(webpackConfig, function(err, stats) {
         chunkModules: false
     }) + '\n')
 })
+//@ sourceMappingURL=/Users/wenguangpan/IdeaProjects/vue2-elm/build/build.js.map

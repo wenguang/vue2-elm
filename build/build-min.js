@@ -1,0 +1,2 @@
+require("shelljs/global");env.NODE_ENV="production";var path=require("path"),config=require("../config"),ora=require("ora"),webpack=require("webpack"),webpackConfig=require("./webpack.prod.conf"),spinner=ora("building for production...");spinner.start();var assetsPath=path.join(config.build.assetsRoot,config.build.assetsSubDirectory);rm("-rf",assetsPath);mkdir("-p",assetsPath);cp("-R","static/*",assetsPath);
+webpack(webpackConfig,function(a,b){spinner.stop();if(a)throw a;process.stdout.write(b.toString({colors:!0,modules:!1,children:!1,chunks:!1,chunkModules:!1})+"\n")});
