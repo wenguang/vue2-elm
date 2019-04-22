@@ -59,3 +59,7 @@ output.publicPath + 'style.[chunkhash].css' = '/dist/style.[chunkhash].css'
 
 **Object.keys**：[Object.keys用法总结](https://blog.csdn.net/juzipchy/article/details/76037755)
 
+
+参考：[【30分钟】吃透webpack，也许这一篇就够了](https://segmentfault.com/a/1190000012631766#articleHeader20)
+
+

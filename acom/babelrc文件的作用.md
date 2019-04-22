@@ -23,6 +23,24 @@
 }
 ```
 
+```
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2"
+  ],
+  "plugins": ["transform-runtime"],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
+```
+
+
 presets是预设，它里面的值es2015对应babel-preset-es2015包，stage-2对应babel-preset-stage-2包，**persets的意思就是告诉babel按es2015和stage-2的定义范围来转译。**
 
 
@@ -36,5 +54,6 @@ comments就很简单了，就是转译后带不带注释。
 除presets、plugins、comments，还有其他的配置，presets配置中除了es2015、stage-2，还有stage-0、stage-1、stage-3，它们要各有什么含义？请参考：
 [babel之配置文件.babelrc入门详解](https://juejin.im/post/5a79adeef265da4e93116430)
 [Babel 入门教程](http://www.ruanyifeng.com/blog/2016/01/babel.html)
+
 
 
